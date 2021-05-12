@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="User_UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Css.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="subcontainer">
+
+       
+    <form id="form1" runat="server">
+        <table cellpadding="0" cellspadding="0" border="0" >
+            <tr>
+                <td>
+                    <div class="header">
+                        <table cellpadding="0" cellspadding="0" border="0" style="height:auto">
+                            <tr>
+                                <td rowspan="2">
+                                    <img src="../image/c14.jpg" width="200" height="250" alt="Alternate Text" />
+                                </td>
+                                <td align="center" >
+                                   
+                                    <img src="../image/c10.jpg" alt="Alternate Text" width="620" height="250" />
+                                </td>
+                                <td rowspan="2"> 
+                                    <img src="../image/c15.jpg" alt="Alternate Text" width="200" height="250" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                   <h3 ><strong><i> SMART LIVEING FASHION SHOP</i></strong></h3>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="menu" >
+                        <ul id="css3menu">
+                            <li>
+                                <a href="UserHome.aspx"> User Home </a>
+                            </li>
+                            <li>
+                                <a href="CustomerLogIn.aspx">Customer Log In</a>
+                            </li>
+                            <li>
+                                <a href="NewCustomer.aspx">New Customer</a>
+                            </li>
+                            <li>
+                                <a href="Item.aspx">Item</a>
+                            </li>
+                            <li>
+                                <a href="ItemReport.aspx">Item List(Download)</a>
+                            </li>
+                            <li>
+                                <a href="OrderList.aspx">
+                                    <asp:imagebutton ID="btnMessage" ImageUrl="~/Images/shad.ico" height="13px" Visible="False" runat="server"></asp:imagebutton>
+                                    Order List
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="space"> 
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <div align="center">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="space"> </td>
+            </tr>
+            <tr>
+                <td class="footer">
+                         Copyright@ 2020 Welcome To Smart Things Designed By <strong>SMC</strong>
+                </td>
+            </tr>
+        </table>
+    </form>
+         </div>
+     </div>
+</body>
+</html>

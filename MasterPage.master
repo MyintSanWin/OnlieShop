@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SMART LIVEING FASHION SHOP</title>
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 913px;
+        }
+        .auto-style2 {
+            text-align: center;
+            color: #fff;
+            width: 913px;
+            padding: 10px 0;
+            background: #222;
+        }
+        .auto-style3 {
+            height: 166px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="subcontainer">
+        <form id="form2" runat="server">
+        <table cellpadding="0" cellspacing="0" border="0px">
+            <tr>
+                <td class="auto-style1">
+                 <div class="header">
+                    <table cellpadding="0" cellspacing="0" border="0px" style="height: 184px">
+                        <tr>
+                            <td rowspan="2">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/image/p1.jpg" Height="195px" 
+                                Width="200px" />
+                            </td>
+                            <td class="auto-style3">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/image/p2.jpg" Height="100px" 
+                                    Width="474px" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td rowspan="2">
+                             <asp:Image ID="Image1" runat="server" ImageUrl="~/image/p1.jpg" Height="195px" 
+                                Width="200px" />  
+                            </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                          <h6> <label >SMART LIVING FASHION </label></h6>
+                        </td>
+                    </tr>                 
+                </table>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                <div class="menu">
+                    <ul id="css3menu">
+                        <li><a href="User/UserHome.aspx">User Home Page</a></li>
+                        <li>
+                            <asp:LinkButton ID="lbtnLogIn" runat="server" Text="LogIn" 
+                                onclick="lbtnLogIn_Click" ></asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                 <div align="center">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+                    </asp:ContentPlaceHolder>
+                 </div>   
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                  
+                        Copyright@ 2020 Welcome To Smart Things Designed By <strong>SMC</strong>
+                </td>
+            </tr>
+        </table>
+        </form>
+     </div>
+    </div>
+</body>
+</html>
